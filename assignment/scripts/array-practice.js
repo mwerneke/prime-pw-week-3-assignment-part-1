@@ -61,14 +61,17 @@ console.log('The animals are now', animalArray);
 
 // 4.b. TODO: Remove the food at the end of your array &
 //      log both the food removed and the updated array
-
+let removedFood = favoriteFood.pop();
+console.log('Removed my last update to foods', removedFood);
+console.log('My updated food list:', favoriteFood);
 
 // Example: Add an animal to the beginning using Array.unshift
 animalArray.unshift('walrus');
 console.log(`Added an animal to beginning: ${animalArray}`);
 
 // 4.c. TODO: Add a food at the beginning of the array & log the array
-
+favoriteFood.unshift('pasta');
+console.log('Another updated list of food:', favoriteFood);
 
 // Example: Remove the first animal using Array.shift
 removedAnimal = animalArray.shift();
@@ -77,3 +80,6 @@ console.log('The animals are now', animalArray);
 
 // 4.d TODO: Remove the food at the beginning of your array &
 //     log both the food removed and the updated array
+removedFood = favoriteFood.shift();
+console.log('The food removed:', removedFood);
+console.log('My final updated food list:', favoriteFood);
